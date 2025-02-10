@@ -26,7 +26,7 @@
 #
 
 on init
-    start boot-hal-1-2
+    start vendor.boot-qti
 
 on early-fs
     write /proc/sys/walt/sched_lib_name "recovery,magiskboot,Updater,updater,update_engine_sideload"
@@ -61,7 +61,7 @@ on property:twrp.modules.loaded=true
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
     start touch_report
-    start health-hal-2-1
+    start vendor.health-recovery
     start vendor.qseecomd
     umount /firmware
 

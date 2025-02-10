@@ -2,6 +2,9 @@
 ro.adb.secure=0
 ro.boot.dynamic_partitions=true
 
+# Logd
+ro.logd.kernel=true
+
 # Gatekeeper
 vendor.gatekeeper.disable_spu=true
 vendor.gatekeeper.is_security_level_spu=0
