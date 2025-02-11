@@ -3,7 +3,7 @@ service vendor.qseecomd /vendor/bin/qseecomd
     class core
     user root
     group root drmrpc
-    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib64/hw:/system/lib64:/sbin
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib64/hw:/system/lib64:/sbin:/odm/lib64
     disabled
     seclabel u:r:recovery:s0
     

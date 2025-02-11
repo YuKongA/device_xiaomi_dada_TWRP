@@ -60,15 +60,17 @@ on property:twrp.modules.loaded=true
     wait /sys/kernel/boot_adsp/boot
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+    start vendor.health-default
+    start vibratorfeature-hal-service
     start touch_report
-    start vendor.health-recovery
-    start vendor.qseecomd
     umount /firmware
 
-on property:vendor.sys.listeners.registered=true
-    start vibratorfeature-hal-service
-    start vendor.gatekeeper_default
+on property:hwservicemanager.ready=true
+    start vendor.qseecomd
     start vendor.keymint-qti
+
+on property:vendor.sys.listeners.registered=true
+    start vendor.gatekeeper_default
     start vendor.weaver_hal_service
     start vendor.secure_element
     #start vendor.keymint-strongbox

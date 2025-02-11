@@ -1,8 +1,7 @@
-service vendor.weaver_hal_service /vendor/bin/hw/android.hardware.weaver-service.thales
-    class hal
+service vendor.boot-qti /vendor/bin/hw/android.hardware.boot-service.qti
+    class early_hal
     user root
-    group root drmrpc
+    group root
     setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib64/hw:/system/lib64:/sbin:/odm/lib64
     disabled
     seclabel u:r:recovery:s0
-    
