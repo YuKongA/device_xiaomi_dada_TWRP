@@ -62,7 +62,6 @@ on property:twrp.modules.loaded=true
     wait /sys/class/power_supply/battery
     start vendor.health-default
     start vibratorfeature-hal-service
-    start touch_report
     umount /firmware
 
 on property:hwservicemanager.ready=true
@@ -73,4 +72,5 @@ on property:vendor.sys.listeners.registered=true
     start vendor.gatekeeper_default
     start vendor.weaver_hal_service
     start vendor.secure_element
+    start touch_report
     #start vendor.keymint-strongbox
