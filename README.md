@@ -18,10 +18,10 @@ Battery | 5400mAh(typ)/5260mAh(min), non-removable
 Display | 1200x2670, 6.36", AMOLED, 1-120Hz dynamic, 3200nits peak brightness
 Camera  | 50MP (main), 50MP (floating telephoto), 50MP (ultra-wide), 32MP (front)
 
-## Build by yourself?
-1. Fix wrong screen colors -> [commit](https://github.com/YuKongA/android_bootable_recovery/commit/7b630af24cf4849fae6115f1cc15c527b3197f0c)
+## Build it yourself?
+1. Fix wrong screen colors -> [commit](https://github.com/YuKongA/android_bootable_recovery_twrp-14/commit/edf59d8b504a4b3db197286aeac1c73727708175)
 
-2. Fix `E: Unknown File System: mifs` -> [commit](https://github.com/YuKongA/android_bootable_recovery/commit/983ee200761b0196a928506ab37f1d75fa369347)
+2. Fix `E: Unknown File System: mifs` -> [commit](https://github.com/YuKongA/android_bootable_recovery_twrp-14/commit/d7167c4d7b9cd341c049d62c876f365b58a39542)
 
 ## Features
 Not works:
